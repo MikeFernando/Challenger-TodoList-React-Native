@@ -3,6 +3,7 @@ import { NativeBaseProvider } from 'native-base';
 
 import { Home } from "./src/screens/Home";
 import { THEME } from './src/theme';
+import { TasksProvider } from '@contexts/TaskContext';
 
 export default function App() {
   const [ fontsLoaded ] = useFonts({
@@ -13,7 +14,9 @@ export default function App() {
 
   return (
     <NativeBaseProvider theme={THEME}>
-      {fontsLoaded && <Home />}
+      <TasksProvider>
+        {fontsLoaded && <Home />}
+      </TasksProvider>
    </NativeBaseProvider>
    
   );

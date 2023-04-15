@@ -1,15 +1,28 @@
-import { Box, Checkbox, HStack, Icon } from "native-base";
+import { Checkbox, HStack, Icon, Box } from "native-base";
 import { TouchableOpacity } from "react-native";
 import { EvilIcons  } from '@expo/vector-icons';
 import { _Text } from "react-native";
+import { useState } from "react";
+
+import { useTask } from "@hooks/useTask";
 
 type Props = {
   description: string
-  isCompleted: boolean
   onRemove: () => void
 }
 
-export function TaskCard({ description, isCompleted, onRemove }: Props){
+export function TaskCard({ description, onRemove }: Props){
+  const [toggle, setToggle] = useState(true)
+
+  const { incrementOrDecreaseTasks } = useTask()
+
+  function handleToggle() {
+    setToggle(!toggle)
+    toggle 
+      ? incrementOrDecreaseTasks(true) 
+      : incrementOrDecreaseTasks(false)
+  }
+
   return (
     <HStack bg='gray.500' borderRadius={10} py={4} px={5} mt={2} borderWidth={1} borderColor='gray.400'>
       <HStack alignItems='center' justifyContent='space-between' w='100%'>
@@ -22,11 +35,11 @@ export function TaskCard({ description, isCompleted, onRemove }: Props){
             borderColor='blue.400' 
             backgroundColor= 'gray.600'
             value={description}
+            onChange={handleToggle} 
             _text={{
               color: 'gray.100',
             }}
             _checked={{
-              onChange: () => isCompleted = true,
               backgroundColor: 'purple.500',
               borderColor: 'purple.500',
               _text: {

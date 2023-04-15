@@ -7,7 +7,7 @@ export function Input({ ...rest }: Props){
   return (
     <InputNativeBase
       flex={1}
-      placeholder='Adicionar tarefa'
+      placeholder='Adicione uma nova tarefa'
       placeholderTextColor='gray.300'
       bg='gray.500'
       px={4}

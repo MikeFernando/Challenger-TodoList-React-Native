@@ -1,70 +1,23 @@
-import { StatusBar, HStack, Text, VStack, Center, Divider, FlatList, Button as ButtonNativeBase, useToast } from "native-base";
+import { StatusBar, HStack, Text, VStack, Center, Divider, FlatList, Button as ButtonNativeBase, Box } from "native-base";
 import { Ionicons } from "@expo/vector-icons";
-import { useState } from "react";
-import uuid from 'react-native-uuid'
 
-import ImageEmpytTasks from '@assets/empyt.svg'
+import { useTask} from "@hooks/useTask";
+
+import ImageEmpytTasks from '@assets/empyt-task.svg'
 
 import { Input } from "@components/Input";
 import { Header } from "@components/Header";
 import { TaskCard } from "@components/TaskCard";
 
-type TaskProps = {
-  id: string,
-  description: string,
-  isCompleted: boolean,
-}
-
 export function Home(){
-  const [taskName, setTaskName] = useState('')
-  const [amountTaskCompleted, setAmountTaskCompleted] = useState(0)
-  const [tasks, setTasks] = useState<TaskProps[]>([])
-
-  const toast = useToast()
-
-  function handleAddTaskName() {
-    if (taskName.length === 0) {
-      toast.show({
-        title: 'Digite uma tarefa para adicionar.',
-        placement: 'top',
-        bgColor: 'orange.400',
-      })
-      return 
-    }
-
-    const taskAlreadyExists = tasks.find(task => task.description === taskName)
-
-    if (taskAlreadyExists) {
-      toast.show({
-        title: 'Essa tarefa já existe.',
-        placement: 'top',
-        bgColor: 'orange.400',
-      })
-      return 
-    }
-    
-    setTasks(prevState => [...prevState, {
-      id: `${uuid.v4()}`,
-      description: taskName,
-      isCompleted: false,
-    }])
-
-    setTaskName('')
-  }
-
-  function handleDeleteTask(id: string) {
-    setTasks(prevState => prevState.filter(item => item.id !== id))
-
-    toast.show({
-      title: 'Tarefa removida!',
-      placement: 'top',
-      bgColor: 'purple.500'
-    })
-  }
-
-  // const totalTaskCompleted = tasks.reduce((acc, task) => {
-  //   return acc + task.isCompleted
-  // }, )
+  const { 
+    tasks, 
+    taskName, 
+    setTaskName, 
+    handleDeleteTask,
+    handleAddTaskName, 
+    amountTaskCompleted 
+  } = useTask()
 
   return (
     <>
@@ -75,7 +28,7 @@ export function Home(){
         <HStack mt={-12}>
           <Input 
             value={taskName} 
-            numberOfLines={1}  
+            numberOfLines={1}
             onChangeText={setTaskName}
             keyboardAppearance="dark"
           />
@@ -100,19 +53,15 @@ export function Home(){
             >
               Criadas
             </Text>
-            <Text 
-                bg='gray.400' 
-                color='gray.100' 
-                fontSize={12} 
-                fontWeight='bold' 
-                px={2}
-                py='3px'
-
-                ml={2}
-                rounded='full'
-              >
-                {tasks.length}
+            <Box borderWidth='1' borderColor='gray.400' rounded='full' ml={2} px={2} py={1} bg='gray.400'>
+              <Text 
+                  color='gray.100' 
+                  fontSize={12} 
+                  fontWeight='bold' 
+                >
+                  {tasks?.length}
               </Text>
+            </Box>
           </HStack>
           
           <HStack justifyContent='center' alignItems='center'>
@@ -125,18 +74,17 @@ export function Home(){
             >
               Concluídas
             </Text>
-            <Text
-              bg='gray.400' 
-              color='gray.100' 
-              fontSize={12} 
-              fontWeight='bold' 
-              px={2}
-              py='3px'
-              ml={2}
-              rounded='full'
-              >
-                {amountTaskCompleted}
-            </Text>
+            <Box borderWidth='1' borderColor='gray.400' rounded='full' ml={2} px={2} py={1} bg='gray.400'>
+              <Text
+                bg='gray.400' 
+                color='gray.100' 
+                fontSize={12} 
+                fontWeight='bold' 
+                rounded='full'
+                >
+                  {amountTaskCompleted}
+              </Text>
+            </Box>
           </HStack>
         </HStack>
 
@@ -149,7 +97,6 @@ export function Home(){
             <TaskCard
               key={item.id}
               description={item.description}
-              isCompleted={item.isCompleted}
               onRemove={() => handleDeleteTask(item.id)}
             />
           }
