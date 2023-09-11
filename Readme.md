@@ -12,7 +12,7 @@
 >
 </div>
 
-<img src"https://imgur.com/YuWnD82.png" alt='todo list' />
+![](https://i.imgur.com/YuWnD82.png)
 
 ## Detalhes do aplicativo
 
