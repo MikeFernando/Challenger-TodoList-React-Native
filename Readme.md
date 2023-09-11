@@ -10,7 +10,7 @@
 <div
   style="width:100%; display:flex; align-items:center; gap:16px" 
 >
-[img]https://i.imgur.com/YuWnD82.png[/img]
+<img src"https://imgur.com/YuWnD82.png" alt='todo list' />
 
 
 </div>
