@@ -10,9 +10,7 @@
 <div
   style="width:100%; display:flex; align-items:center; gap:16px" 
 >
-<img src="./assets/img2.png" width="30%">
-<img src="./assets/img1.png"  width="30%">
-<img src="./assets/img3.png" width="30%">
+![Imgur](https://imgur.com/YuWnD82.png)
 
 
 </div>
