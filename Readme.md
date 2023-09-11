@@ -30,11 +30,11 @@ Para gerar uma cópia do projeto e implementar as suas melhorias, esteja em um c
 
 1  clone o projeto com o comando 
 ```
-git clone https://github.com/maykonsousa/todoListMobile
+git clone https://github.com/mikefernando/Challenger-Ignite-TodoList-React-Native
 ``` 
 2  Acesse o projeto pelo terminal com o comando 
 ```
-cd todoListMobile
+cd Challenger-Ignite-TodoList-React-Native
 ```  
 3  Instale as dependências necessárias com o comando
 ```
