@@ -10,10 +10,9 @@
 <div
   style="width:100%; display:flex; align-items:center; gap:16px" 
 >
-<img src"https://imgur.com/YuWnD82.png" alt='todo list' />
-
-
 </div>
+
+<img src"https://imgur.com/YuWnD82.png" alt='todo list' />
 
 ## Detalhes do aplicativo
 
