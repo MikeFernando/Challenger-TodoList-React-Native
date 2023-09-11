@@ -10,7 +10,7 @@
 <div
   style="width:100%; display:flex; align-items:center; gap:16px" 
 >
-[Imgur](https://imgur.com/YuWnD82)
+[img]https://i.imgur.com/YuWnD82.png[/img]
 
 
 </div>
