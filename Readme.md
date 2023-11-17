@@ -11,6 +11,8 @@
 </div>
 
 
+![](https://i.imgur.com/YuWnD82.png)
+
 
 ## Detalhes do aplicativo
 
