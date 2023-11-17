@@ -1,11 +1,9 @@
-# TODO LIST
+# OrendaPay
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/MikeFernando/Challenger-Ignite-TodoList-React-Native)
 ![GitHub language count](https://img.shields.io/github/languages/count/MikeFernando/Challenger-Ignite-TodoList-React-Native)
 ![GitHub forks](https://img.shields.io/github/forks/MikeFernando/Challenger-Ignite-TodoList-React-Native)
 
-
-> Este é um aplicativo simples de TODO List proposto no desafio 01 do curso de React Native [Rocketseat](http://app.ropcketseat.com.br)
 
 <div
   style="width:100%; display:flex; align-items:center; gap:16px" 
@@ -46,13 +44,6 @@ npm install
 npm run android
 ``` 
 5  Acesse o aplicativo em seu dispositívo físico com o app Expo Go ou pelo Android Studio 
-
-## 🌐 Links úteis
-[NodeJS](https://nodejs.org/en/download)  
-[Expo](https://expo.dev/)  
-[Android Studio](https://developer.android.com/studio/install?hl=pt-br)  
-[Figma do projeto](https://www.figma.com/file/9oFvFCof9KMaxDsH9IhPjg/ToDo-List-%E2%80%A2-Mobile)
-
 
 ## 🧑‍💻 Mike Fernando
 
