@@ -49,7 +49,3 @@ npm run android
 
 ## 🧑‍💻 Mike Fernando
 
-[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />]([https://www.linkedin.com/in/maykonsousa](https://www.linkedin.com/in/mike-fernando3g/))
-[<img src=" https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />](https://gthub.com/MikeFernando)
-[<img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" height="28" />]([http://maykonsousa.dev.br](https://devmaikera.vercel.app/)https://devmaikera.vercel.app/
-)
