@@ -1,5 +1,3 @@
-# Todo List
-
 ![GitHub repo size](https://img.shields.io/github/repo-size/MikeFernando/Challenger-Ignite-TodoList-React-Native)
 ![GitHub language count](https://img.shields.io/github/languages/count/MikeFernando/Challenger-Ignite-TodoList-React-Native)
 ![GitHub forks](https://img.shields.io/github/forks/MikeFernando/Challenger-Ignite-TodoList-React-Native)
