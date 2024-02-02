@@ -1,4 +1,4 @@
-# OrendaPay
+# Todo List
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/MikeFernando/Challenger-Ignite-TodoList-React-Native)
 ![GitHub language count](https://img.shields.io/github/languages/count/MikeFernando/Challenger-Ignite-TodoList-React-Native)
@@ -46,6 +46,4 @@ npm install
 npm run android
 ``` 
 5  Acesse o aplicativo em seu dispositívo físico com o app Expo Go ou pelo Android Studio 
-
-## 🧑‍💻 Mike Fernando
 
