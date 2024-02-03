@@ -14,8 +14,8 @@
 
 ## Detalhes do aplicativo
 
-- A ideia do desafio foi a construição de um aplicativo mobile multiplataforma capaz de gerenciar tarefas a executar.  
-Com isso pude fixar alguns conceito de componentização e gerenciamento de estado, renderização condicional e hooks.
+- A ideia do desafio foi a construição de um aplicativo mobile multiplataforma capaz de gerenciar tarefas a executar  
+Com isso pude fixar alguns conceito de componentização e gerenciamento de estado, renderização condicional e hooks
 
 ## 🚀 Melhorias implementadas
 - [x] - Estilização com styled components
